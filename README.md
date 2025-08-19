@@ -1,1 +1,2 @@
-# Enforcing-Security-Best-Practices-with-Linux-Permissions
+# Project: Enforcing Security Best Practices with Linux Permissions. 
+As part of the Day0 Academy Course, I worked on a project focused on the “Least Privilege” principle. On a Linux system, I managed file permissions to ensure users had only the access they truly needed. This hands-on experience taught me how careful permission management strengthens security while keeping systems functional and efficient.
