@@ -4,11 +4,11 @@
   
 ## Project Overview
 
- : Scenario
+ - Scenario
 
   While working as an IT professional in a major finance organization, I led a project to enforce the “Least Privilege” principle on a Linux system. The focus was on the /home/researcher2/projects directory, a key area used by the researcher2 account and the research_team group, where careful permission management was critical for security.
 
-: Key Actions
+ - Key Actions
 
 * Permission Audit: Conducted a thorough review of all files, including hidden ones, to identify permissions that didn’t meet security standards.
 
