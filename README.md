@@ -25,3 +25,5 @@ The goal of this project was to strengthen data security by applying the “Leas
 Step 1 – Reviewing File and Directory Details
 
 I began by examining the files and directories inside the projects folder. Using the ls -la command, I was able to display all permissions, including those for hidden files, to get a complete picture of the current access settings.
+
+<img width="1108" height="222" alt="Screenshot 2025-08-19 at 10 46 19 PM" src="https://github.com/user-attachments/assets/3eb115fb-73d0-414a-9095-21ff055304ec" />
