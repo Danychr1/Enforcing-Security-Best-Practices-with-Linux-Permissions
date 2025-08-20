@@ -41,3 +41,6 @@ According to the organization’s policy, no files should allow write access for
 <img width="1152" height="663" alt="Screenshot 2025-08-20 at 12 06 33 AM" src="https://github.com/user-attachments/assets/e6f930ac-be01-4ca7-b21f-8218dafc176a" />
 
 
+Additionally, the organization’s policy states that group members should not have read access to master000.txt. To enforce this, I removed the group’s read permission with the command chmod g-r master000.txt, then verified the update using ls -la to confirm the restriction was applied correctly.
+
+<img width="1138" height="660" alt="Screenshot 2025-08-20 at 12 26 53 AM" src="https://github.com/user-attachments/assets/fbee6b57-a49f-4584-916b-e21438e9effe" />
