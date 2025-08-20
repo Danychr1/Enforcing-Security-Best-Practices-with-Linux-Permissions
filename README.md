@@ -6,7 +6,7 @@
 
  - Scenario
 
-  While working as an IT professional in a major finance organization, I led a project to enforce the “Least Privilege” principle on a Linux system. The focus was on the /home/researcher2/projects directory, a key area used by the researcher2 account and the research_team group, where careful permission management was critical for security.
+  While working as an IT professional in a major finance organization, I led a project to enforce the “Least Privilege” principle on a Linux system. The focus was on the /home/blue-team/projects directory, a key area used by the researcher2 account and the research_team group, where careful permission management was critical for security.
 
  - Key Actions
 
@@ -44,3 +44,40 @@ According to the organization’s policy, no files should allow write access for
 Additionally, the organization’s policy states that group members should not have read access to master000.txt. To enforce this, I removed the group’s read permission with the command chmod g-r master000.txt, then verified the update using ls -la to confirm the restriction was applied correctly.
 
 <img width="1138" height="660" alt="Screenshot 2025-08-20 at 12 26 53 AM" src="https://github.com/user-attachments/assets/fbee6b57-a49f-4584-916b-e21438e9effe" />
+
+
+
+Step 4 – Restricting Group Access
+The organization’s policy states that group members should not have read access to project_m.txt. To enforce this, I removed the group’s read permission with the command chmod g-r project_m.txt, then verified the update using ls -la to confirm the restriction was applied correctly.
+
+
+
+Step 5 – Updating Permissions on a Hidden File
+While reviewing the directory with ls -la, I found a hidden file named .project_x.txt. Both the user and the group had write permissions, which violated policy. To fix this, I removed those permissions using chmod u-w,g-w .project_x.txt, ensuring the file complied with security requirements.
+
+
+Step 6 – Securing Directory Access
+In the final step, I focused on the drafts directory. To align with policy, I adjusted its permissions so that only the researcher2 user retained access, ensuring sensitive files were properly restricted.
+
+
+Step 7 – Removing Group Execute Permissions
+When reviewing the drafts directory with ls -l, I noticed that the group still had execute permissions. To meet policy requirements, I removed this access using chmod g-x drafts, then confirmed the change with ls -l to ensure compliance.
+
+
+Project Summary
+
+In this project, I took on the responsibility of enforcing the “Least Privilege” principle as an IT professional within a large finance organization. The focus was the /home/researcher2/projects directory, owned by the researcher2 user, a member of the research_team group, where careful permission management was critical.
+
+The process began with a thorough review of all files and directories—including hidden ones—using the ls -la command to display detailed permissions. During the audit, several items were found to be out of compliance with the organization’s security policy:
+
+project_k.txt: Others had write access, which was removed using chmod o-w project_k.txt.
+
+project_m.txt: The group had read access against policy, removed with chmod g-r project_m.txt.
+
+.project_x.txt (hidden file): Both the user and group had write permissions, removed with chmod u-w,g-w .project_x.txt.
+
+drafts directory: Access was restricted so that only researcher2 could use it, and the group execute permission was removed with chmod g-x drafts.
+
+Each change was verified with ls -la or ls -l to ensure compliance and correctness.
+
+This project not only demonstrates my ability to apply key security principles in a Linux environment but also highlights my hands-on proficiency with command-line tools to effectively manage and secure file and directory permissions, balancing security and operational functionality.
