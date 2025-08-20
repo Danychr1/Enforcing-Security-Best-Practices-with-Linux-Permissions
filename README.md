@@ -16,9 +16,12 @@ Permission Adjustment: Applied precise changes to user, group, and other permiss
 
 This project strengthened my hands-on Linux skills and reinforced the importance of balancing security with usability in real-world environments.
 
-@Objective
+ - Objective
+   
 The goal of this project was to strengthen data security by applying the “Least Privilege” principle—reducing potential vulnerabilities while keeping systems fully functional.
 
-@Steps
+ - Steps
+ 
 Step 1 – Reviewing File and Directory Details
+
 I began by examining the files and directories inside the projects folder. Using the ls -la command, I was able to display all permissions, including those for hidden files, to get a complete picture of the current access settings.
