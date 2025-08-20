@@ -27,3 +27,17 @@ Step 1 – Reviewing File and Directory Details
 I began by examining the files and directories inside the projects folder. Using the ls -la command, I was able to display all permissions, including those for hidden files, to get a complete picture of the current access settings.
 
 <img width="1108" height="222" alt="Screenshot 2025-08-19 at 10 46 19 PM" src="https://github.com/user-attachments/assets/3eb115fb-73d0-414a-9095-21ff055304ec" />
+
+Step 2 – Interpreting the Permissions String
+
+After running the ls -la command, I reviewed the permissions assigned to each file and directory, including hidden ones. Focusing on the drafts directory, I noted that the user had read, write, and execute permissions, the group had only execute permissions, and others had no access at all. The permission string for this setup was: drwx--x---.
+
+<img width="1108" height="483" alt="Screenshot 2025-08-19 at 11 27 27 PM" src="https://github.com/user-attachments/assets/c12848a6-2b98-415b-97d1-8f4decffdebe" />
+
+Step 3 – Changing File Permissions
+
+According to the organization’s policy, no files should allow write access for “others.” During my review, I found that master00.txt was the only file violating this rule. To correct it, I used the command chmod 664 master00.txt or chmod o-w master00.txt to remove the unnecessary permission. I then verified the change with ls -la to ensure compliance.
+
+<img width="1152" height="663" alt="Screenshot 2025-08-20 at 12 06 33 AM" src="https://github.com/user-attachments/assets/e6f930ac-be01-4ca7-b21f-8218dafc176a" />
+
+
