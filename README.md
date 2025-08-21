@@ -27,13 +27,14 @@ Step 1 – Reviewing File and Directory Details
 I began by examining the files and directories inside the projects folder. Using the ls -la command, I was able to display all permissions, including those for hidden files, to get a complete picture of the current access settings.
 
 
-<img width="882" height="382" alt="Screenshot 2025-08-21 at 12 12 37 AM" src="https://github.com/user-attachments/assets/27e6560f-dd8d-41ca-98da-86deb0171094" />
-
+<img width="934" height="103" alt="image" src="https://github.com/user-attachments/assets/c3aa6d83-06fc-4efe-8a74-4a3ba87ffb01" />
 
 Step 2 – Interpreting the Permissions String
 
 After running the ls -la command, I reviewed the permissions assigned to each file and directory, including hidden ones. Focusing on the drafts directory, I noted that the user had read, write, and execute permissions, the group had only execute permissions, and others had no access at all. The permission string for this setup was: drwx--x---.
-<img width="1025" height="688" alt="Screenshot 2025-08-21 at 12 13 06 AM" src="https://github.com/user-attachments/assets/d2f6851c-7a3e-465a-b4df-1cdcb8ddcaf9" />
+
+<img width="934" height="315" alt="image" src="https://github.com/user-attachments/assets/18e8cd1c-318a-4e4e-bbfd-4c65d5ba1574" />
+
 
 
 Step 3 – Changing File Permissions
