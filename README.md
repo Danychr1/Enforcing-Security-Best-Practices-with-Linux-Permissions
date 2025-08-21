@@ -41,26 +41,33 @@ Step 3 – Changing File Permissions
 
 According to the organization’s policy, no files should allow write access for “others.” During my review, I found that master00.txt was the only file violating this rule. To correct it, I used the command chmod 664 master00.txt or chmod o-w master00.txt to remove the unnecessary permission. I then verified the change with ls -la to ensure compliance.
 
-<img width="1152" height="663" alt="Screenshot 2025-08-20 at 12 06 33 AM" src="https://github.com/user-attachments/assets/e6f930ac-be01-4ca7-b21f-8218dafc176a" />
+<img width="827" height="460" alt="image" src="https://github.com/user-attachments/assets/fad2c3ad-d640-4dbf-b51c-6987ccca2343" />
+
 
 
 Additionally, the organization’s policy states that group members should not have read access to master000.txt. To enforce this, I removed the group’s read permission with the command chmod g-r master000.txt, then verified the update using ls -la to confirm the restriction was applied correctly.
 
-<img width="1138" height="660" alt="Screenshot 2025-08-20 at 12 26 53 AM" src="https://github.com/user-attachments/assets/fbee6b57-a49f-4584-916b-e21438e9effe" />
-
+<img width="829" height="648" alt="image" src="https://github.com/user-attachments/assets/b300320d-326d-44b4-a557-a84724da9dd0" />
 
 
 Step 4 – Restricting Group Access
 The organization’s policy states that group members should not have read access to project_m.txt. To enforce this, I removed the group’s read permission with the command chmod g-r project_m.txt, then verified the update using ls -la to confirm the restriction was applied correctly.
 
 
+<img width="827" height="831" alt="image" src="https://github.com/user-attachments/assets/5d1f827a-9eb7-4dce-86b2-e2907e93975a" />
+
 
 Step 5 – Updating Permissions on a Hidden File
 While reviewing the directory with ls -la, I found a hidden file named .project_x.txt. Both the user and the group had write permissions, which violated policy. To fix this, I removed those permissions using chmod u-w,g-w .project_x.txt, ensuring the file complied with security requirements.
 
+<img width="827" height="150" alt="image" src="https://github.com/user-attachments/assets/b3b02dc7-e089-4131-aeb6-b3ad2ec4e369" />
+
+
 
 Step 6 – Securing Directory Access
 In the final step, I focused on the drafts directory. To align with policy, I adjusted its permissions so that only the researcher2 user retained access, ensuring sensitive files were properly restricted.
+
+<img width="828" height="277" alt="image" src="https://github.com/user-attachments/assets/d8d52c6d-2aeb-48b9-a751-33cfd2f682d2" />
 
 
 Step 7 – Removing Group Execute Permissions
