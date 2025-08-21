@@ -74,11 +74,11 @@ Step 7 – Removing Group Execute Permissions
 When reviewing the drafts directory with ls -l, I noticed that the group still had execute permissions. To meet policy requirements, I removed this access using chmod g-x drafts, then confirmed the change with ls -l to ensure compliance.
 
 
-Project Summary
+## Project Summary
 
 In this project, I took on the responsibility of enforcing the “Least Privilege” principle as an IT professional within a large finance organization. The focus was the /home/researcher2/projects directory, owned by the researcher2 user, a member of the research_team group, where careful permission management was critical.
 
-The process began with a thorough review of all files and directories—including hidden ones—using the ls -la command to display detailed permissions. During the audit, several items were found to be out of compliance with the organization’s security policy:
+The process began with a thorough review of all files and directories, including hidden ones—using the ls -la command to display detailed permissions. During the audit, several items were found to be out of compliance with the organization’s security policy:
 
 project_k.txt: Others had write access, which was removed using chmod o-w project_k.txt.
 
