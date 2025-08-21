@@ -26,7 +26,8 @@ Step 1 – Reviewing File and Directory Details
 
 I began by examining the files and directories inside the projects folder. Using the ls -la command, I was able to display all permissions, including those for hidden files, to get a complete picture of the current access settings.
 
-<img width="1108" height="222" alt="Screenshot 2025-08-19 at 10 46 19 PM" src="https://github.com/user-attachments/assets/3eb115fb-73d0-414a-9095-21ff055304ec" />
+<img width="882" height="382" alt="Screenshot 2025-08-21 at 12 12 37 AM" src="https://github.com/user-attachments/assets/e401bcff-fbd0-4d4b-bb3e-4b9c4101064e" />
+
 
 Step 2 – Interpreting the Permissions String
 
