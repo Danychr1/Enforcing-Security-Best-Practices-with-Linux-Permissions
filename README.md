@@ -1,12 +1,12 @@
 # Project: Enforcing Security Best Practices with Linux Permissions. 
 
-  As part of the Day0 Academy Course, I worked on a project focused on the “Least Privilege” principle. On a Linux system, I managed file permissions to ensure users had only the access they truly needed. This hands-on experience taught me how careful permission management enhances security while maintaining systems' functionality and efficiency.c
+  As part of the Day0 Academy Course, I worked on a project focused on the “Least Privilege” security principle. On a Linux system, I managed file permissions to ensure users had only the access they truly needed. This hands-on experience taught me how careful permission management enhances security while maintaining systems' functionality and efficiency. 
   
 ## Project Overview
 
  - Scenario
 
-  While working as an IT professional in a major finance organization, I led a project to enforce the “Least Privilege” principle on a Linux system. The focus was on the /home/blue-team/projects directory, a key area used by the researcher2 account and the research_team group, where careful permission management was critical for security.
+  As an IT professional within a major finance organization, I led a project focused on enforcing the "Least Privilege" security principle through precise management of file permissions on the Linux platform. The core of this initiative was the strategic adjustment of user, group, and other permissions within the /home/researcher2/projects directory, a critical area accessed by the researcher2 user and associated with the research_team group.
 
  - Key Actions
 
@@ -45,8 +45,7 @@ According to the organization’s policy, no files should allow write access for
 <img width="827" height="460" alt="image" src="https://github.com/user-attachments/assets/fad2c3ad-d640-4dbf-b51c-6987ccca2343" />
 
 
-
-Additionally, the organization’s policy states that group members should not have read access to master000.txt. To enforce this, I removed the group’s read permission with the command chmod g-r master000.txt, then verified the update using ls -la to confirm the restriction was applied correctly.
+Additionally, the organization prohibits group members from reading the file project_m.txt. I remove this permission using chmod g-r project_m.txt and confirm the change with ls -la.
 
 <img width="829" height="648" alt="image" src="https://github.com/user-attachments/assets/b300320d-326d-44b4-a557-a84724da9dd0" />
 
