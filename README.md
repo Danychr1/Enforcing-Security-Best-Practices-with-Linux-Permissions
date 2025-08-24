@@ -54,13 +54,14 @@ Step 4 – Restricting Group Access
 The organization’s policy states that group members should not have read access to project_m.txt. To enforce this, I removed the group’s read permission with the command chmod g-r project_m.txt, then verified the update using ls -la to confirm the restriction was applied correctly.
 
 
-<img width="827" height="831" alt="image" src="https://github.com/user-attachments/assets/5d1f827a-9eb7-4dce-86b2-e2907e93975a" />
+<img width="722" height="202" alt="Screenshot 2025-08-24 at 12 09 09 PM" src="https://github.com/user-attachments/assets/59b33bc3-9004-41e3-8aea-25cc5bb7b2d3" />
+
 
 
 Step 5 – Updating Permissions on a Hidden File
 While reviewing the directory with ls -la, I found a hidden file named .project_x.txt. Both the user and the group had write permissions, which violated policy. To fix this, I removed those permissions using chmod u-w,g-w .project_x.txt, ensuring the file complied with security requirements.
 
-<img width="827" height="150" alt="image" src="https://github.com/user-attachments/assets/b3b02dc7-e089-4131-aeb6-b3ad2ec4e369" />
+<img width="707" height="206" alt="Screenshot 2025-08-24 at 12 14 13 PM" src="https://github.com/user-attachments/assets/adfbd60d-36aa-4deb-8c29-5f6c010881a6" />
 
 
 
