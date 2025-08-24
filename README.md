@@ -12,7 +12,7 @@
 
 Permission Audit: Conducted a thorough review of all files, including hidden ones, to identify permissions that didn’t meet security standards.
 
-#Permission Adjustment#: Applied precise changes to user, group, and other permissions using Linux command-line tools, ensuring everyone had only the access they truly needed while maintaining productivity.
+# Permission Adjustment: Applied precise changes to user, group, and other permissions using Linux command-line tools, ensuring everyone had only the access they truly needed while maintaining productivity.
 
 This project strengthened my hands-on Linux skills and reinforced the importance of balancing security with usability in real-world environments.
 
