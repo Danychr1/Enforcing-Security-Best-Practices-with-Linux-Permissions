@@ -10,9 +10,9 @@
 
  - Key Actions
 
-* Permission Audit: Conducted a thorough review of all files, including hidden ones, to identify permissions that didn’t meet security standards.
+Permission Audit: Conducted a thorough review of all files, including hidden ones, to identify permissions that didn’t meet security standards.
 
-* Permission Adjustment: Applied precise changes to user, group, and other permissions using Linux command-line tools, ensuring everyone had only the access they truly needed while maintaining productivity.
+Permission Adjustment: Applied precise changes to user, group, and other permissions using Linux command-line tools, ensuring everyone had only the access they truly needed while maintaining productivity.
 
 This project strengthened my hands-on Linux skills and reinforced the importance of balancing security with usability in real-world environments.
 
@@ -24,7 +24,7 @@ The goal of this project was to strengthen data security by applying the “Leas
  
 Step 1 – Reviewing File and Directory Details
 
-I began by examining the files and directories inside the projects folder. Using the ls -la command, I was able to display all permissions, including those for hidden files, to get a complete picture of the current access settings.
+I began by examining the files and directories inside the projects folder. Using the ls -la command, I was able to display all permissions, including those for hidden files, I use the ls -la command.
 
 
 <img width="594" height="69" alt="Screenshot 2025-08-24 at 11 28 55 AM" src="https://github.com/user-attachments/assets/e2239e43-7684-4912-a746-56589163f387" />
@@ -32,7 +32,7 @@ I began by examining the files and directories inside the projects folder. Using
 
 Step 2 – Interpreting the Permissions String
 
-After running the ls -la command, I reviewed the permissions assigned to each file and directory, including hidden ones. Focusing on the drafts directory, I noted that the user had read, write, and execute permissions, the group had only execute permissions, and others had no access at all. The permission string for this setup was: drwx--x---.
+After running the ls -la command, I reviewed the permissions assigned to each file and directory, including hidden ones. Focusing on the drafts directory, I noted that the user had read, write, and execute permissions, the group had only execute permissions, and others had no access at all. The permission string for this setup was: (drwx--x---).
 
 <img width="599" height="233" alt="Screenshot 2025-08-24 at 11 29 37 AM" src="https://github.com/user-attachments/assets/2e0a0dfa-30a8-4e73-afef-cfcc6bb3edb6" />
 
@@ -42,7 +42,7 @@ Step 3 – Changing File Permissions
 
 According to the organization’s policy, no files should allow write access for “others.” During my review, I found that master00.txt was the only file violating this rule. To correct it, I used the command chmod 664 master00.txt or chmod o-w master00.txt to remove the unnecessary permission. I then verified the change with ls -la to ensure compliance.
 
-<img width="827" height="460" alt="image" src="https://github.com/user-attachments/assets/fad2c3ad-d640-4dbf-b51c-6987ccca2343" />
+<img width="666" height="426" alt="Screenshot 2025-08-24 at 11 45 50 AM" src="https://github.com/user-attachments/assets/f73c37df-5547-4959-96cf-98b211158e51" />
 
 
 Additionally, the organization prohibits group members from reading the file project_m.txt. I remove this permission using chmod g-r project_m.txt and confirm the change with ls -la.
