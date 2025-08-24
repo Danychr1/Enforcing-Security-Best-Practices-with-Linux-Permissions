@@ -47,7 +47,7 @@ According to the organization’s policy, no files should allow write access for
 
 Additionally, the organization prohibits group members from reading the file project_m.txt. I remove this permission using chmod g-r project_m.txt and confirm the change with ls -la.
 
-<img width="829" height="648" alt="image" src="https://github.com/user-attachments/assets/b300320d-326d-44b4-a557-a84724da9dd0" />
+<img width="766" height="391" alt="Screenshot 2025-08-24 at 12 04 53 PM" src="https://github.com/user-attachments/assets/dca41469-daf9-4e39-9f22-43ab80e6a666" />
 
 
 Step 4 – Restricting Group Access
