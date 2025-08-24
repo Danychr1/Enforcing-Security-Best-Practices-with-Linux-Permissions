@@ -68,7 +68,7 @@ While reviewing the directory with ls -la, I found a hidden file named .project_
 Step 6 – Securing Directory Access
 In the final step, I focused on the drafts directory. To align with policy, I adjusted its permissions so that only the researcher2 user retained access, ensuring sensitive files were properly restricted.
 
-<img width="828" height="277" alt="image" src="https://github.com/user-attachments/assets/d8d52c6d-2aeb-48b9-a751-33cfd2f682d2" />
+<img width="766" height="287" alt="Screenshot 2025-08-24 at 12 19 05 PM" src="https://github.com/user-attachments/assets/a2db9d92-a461-478b-af25-cae3b6ac9ced" />
 
 
 Step 7 – Removing Group Execute Permissions
